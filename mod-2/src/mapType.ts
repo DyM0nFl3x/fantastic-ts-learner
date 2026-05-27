@@ -1,8 +1,9 @@
 type Area<T> = {
-  [key in keyof T]: T[keyof T];
-};
+  [key in keyof T]: T[key];
+}
 
-const hight: Area<{ height: string; weight: boolean }> = {
+
+const test: Area<{ height: string; weight: boolean }> = {
   height: "100",
-  weight: true,
+  weight: true
 };
